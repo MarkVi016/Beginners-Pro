@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porcentagem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>ViniBoy Dev Blog</p>
+  </header>
+
+  <main class="main1">
+    <section class="articlesbox1">
+
+      <div class="artigo1">
+        <h2>Porcentagem (%)</h2>
+
+        <p class="articleboxtxt">
+          A porcentagem também é largamente utilizada em aplicações para a WEB, a partir
+          do momento que você entende como ela funciona numa página WEB muita coisa
+          começa a fazer mais sentido, e principalmente saber diferenciar porcentagem de vw
+          e vh como veremos a frente, em resumo, um elemento ocupará determinada
+          porcentagem de onde ele se encaixa, veremos exemplos que irão clarear as ideias
+          sobre essa forma de definir larguras e alturas.
+          Imagine que temos uma div definida com 500px de largura e 500px de altura, e
+          dentro dessa div temos outra div, essa agora com largura e altura definidas com o
+          valor 50%, o que você acha que irá acontecer? Nesse caso, a div "filha" ocupará
+          50% do largura e altura da div "pai", ou seja, 250px:
+        </p>
+
+        <pre>
+          <code>
+            &lt;style&gt;
+                #div1 {
+                  width: 500px;
+                  height: 500px;
+                  background-color: coral;
+                }
+
+                #div2 {
+                  width: 50%;
+                  height: 50%;
+                  background-color: turquoise;
+                } 
+            &lt;style&gt;
+
+            &lt;div id="div1">
+               &lt;div id="div2">&lt;div&gt;
+            &lt;/div>
+          </code>
+        </pre>
+
+        <div class="button1">
+          <a href="./index.html">Voltar ao Início</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <div id="by">
+      <p>Feito com 🤍 por Marcos Vinícius</p>
+    </div>
+
+    <div id="informations">
+      <p>Contato</p>
+
+      <a href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!"
+        target="_blank">(11) 95319-2823</a>
+      <br>
+      <a href="mailto:viniciussantos1710@gmail.com" target="_blank">viniciussantos1710@gmail.com</a>
+
+      <nav>
+        <a target="_blank" title="Meu Facebook" href="https://www.facebook.com/profile.php?id=100006266010784">
+          <img class="imagem" src="./imagens/icons/facebook.webp" alt="facebook">
+        </a>
+
+        <a target="_blank" title="Meu Twitter"
+          href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!">
+          <img class="imagem" src="./imagens/icons/whatsapp.webp" alt="whatsapp">
+        </a>
+
+        <a target="_blank" title="Meu Instagram" href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-42773220b/">
+          <img class="imagem" src="./imagens/icons/linkedin.webp" alt="linkedin">
+        </a>
+
+        <a target="_blank" title="Meu Linkedin" href="https://www.instagram.com/marcos_vinnic1us/">
+          <img class="imagem" src="./imagens/icons/instagram.webp" alt="instagram">
+        </a>
+      </nav>
+    </div>
+
+    <div id="localization">
+      <p>Endereço</p>
+
+      <a href="https://goo.gl/maps/UcihtdR2ia6jXvPH7" target="_blank">
+        Rua Miguel Barretto, 451
+        <br>
+        em Jundiaí - SP
+      </a>
+    </div>
+
+  </footer>
+</body>
+
+</html>

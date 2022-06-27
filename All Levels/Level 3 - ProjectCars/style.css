@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* Menu */
+header {
+  padding: 1.5%;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+header nav {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around; 
+}
+
+header nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #707070;
+}
+
+header nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/* Banners */
+#banner1 {
+  padding: 5%;
+  font-weight: bold;
+  font-size: 6.6rem;
+  line-height: 6.6rem;
+  color: #ffffff;
+  width: 100%;
+  height: 80vh;
+  background-image: url('./imagens/fuscas/BlackBeetle1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+#banner2 {
+  width: 100%;
+  height: 80vh;
+  background-image: url('./imagens/fuscas/annie-spratt-0zdv8y8LORQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Sections */
+.sections {
+  display: flex;
+  justify-content: space-around;
+  width: 100%
+}
+
+/* First Block */
+#space-around1 {
+  width: 100%;
+  height: 85vh;
+  margin: auto;
+  padding: 0% 5%;
+}
+
+ #description1 p{
+ padding-right: 10%;
+ font-size: 1.8rem;
+ line-height: 2.5rem;
+}
+
+ #description2 p{
+  padding-bottom: 5%;
+  padding-left: 10%;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+ }
+
+ /* Second Block */
+ #space-around2 {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding: 0% 5%;
+}
+
+#history1 p{
+  padding-right: 10%;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+ }
+ 
+#history2 p{
+  padding-bottom: 5%;
+  padding-left: 10%;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+header h2 {
+  padding-left: 3.4%;
+  margin-top: 6.0rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: left;
+  font-weight: 600;
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #000000;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div{
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+footer div a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#by p{
+  font-size: 1.5rem;
+  padding-top: 25%;
+}
+
+#informations p{
+  font-size: 1.8rem;
+  padding-bottom: 13%;
+}
+
+#localization p {
+  font-size: 1.8rem;
+  padding-bottom: 13%;
+}
+
+/* Icons */
+nav {
+  width: 78%;
+  margin-top: 20%;
+  margin: auto;
+  margin-top: 15%;
+  justify-content: space-around;
+}
+
+.imagem {
+  padding: 2%;
+  width: 2.9rem;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 7px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: #C8C8C8;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #707070 ;   
+  border-radius: 0.5px;      
+}
+

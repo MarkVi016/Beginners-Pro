@@ -1,0 +1,156 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+
+  /* Menu */
+  header {
+    padding: 2.5%;
+    width: 100%;
+    background-color: #331F15;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: #331F15;
+  }
+
+  header nav {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around; 
+  }
+
+  header nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  header nav a:hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  /* Sections */
+  .sections {
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+    color: #2e1503;
+    background-color: #ffffff;
+  }
+
+  .sections h2 {
+  text-align: center;
+  margin-top: 0.0rem;
+  margin-bottom: 1.0rem;
+  font-size: 3.0rem;
+  }
+
+  .sections p {
+  font-size: 1.7rem;
+  }
+
+  #around{
+    display: flex  ;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #about {
+    padding: 0% 8% 0% 8%;
+    margin: 3.5% 0% 0% 0%;
+  }
+
+  #around .sections {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+    margin: 2.5% 0% 2% 0%;
+  }
+
+  /* Photos */
+  #photos div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #photos img {
+    width: 30.3rem;
+    border-radius: 2%;
+    margin: 10% 0% 15% 0%;
+  }
+
+  /* Footer */
+  footer {
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: #331F15;
+    padding: 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer div{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  footer div a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  #by p{
+    font-size: 1.5rem;
+    padding-top: 25%;
+  }
+
+  #informations p{
+    font-size: 1.8rem;
+    padding-bottom: 13%;
+  }
+
+  #localization p {
+    font-size: 1.8rem;
+    padding-bottom: 13%;
+  }
+
+  /* Icons */
+  nav {
+    width: 56%;
+    margin-top: 20%;
+    /* margin: auto; */
+    justify-content: space-around;
+  }
+
+  .imagem {
+    padding: 3%;
+    width: 2.9rem;
+  }
+
+  /* Scrollbar */
+  body::-webkit-scrollbar {
+    width: 7px;               
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #C8C8C8;       
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #331f15ee;   
+    border-radius: 0.5px;      
+  }
+

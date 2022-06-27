@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>ViniBoy Dev Blog</p>
+  </header>
+
+  <main class="main1">
+    <section class="articlesbox1">
+
+      <div class="artigo1">
+        <h2>REM</h2>
+
+        <p class="articleboxtxt">
+          Essa unidade assim como EM é bastante interessante e bastante utilizada, ela pode
+          facilitar muito a sua vida no dia a dia com o CSS, essa medida tem relação com o
+          elemento raiz do HTML, ou seja, o próprio elemento html, e sempre que você
+          usar outro elemento com a unidade REM esse elemento terá como referência o
+          elemento html
+        </p>
+
+        <pre>
+          <code>
+            &lt;div&gt;
+               &lt;p&gt;Esse texto não terá o tamanho da fonte alterada&lt;p&gt;
+
+               &lt;p id="txt2x">Esse texto terá o tamanho de 2 vezes o tamanho do elemento raiz&lt;p&gt;
+
+                &lt;p id="txt3x">Esse texto terá o tamanho de 3 vezes o tamanho do elemento raiz&lt;p&gt;
+
+                &lt;p id="txt05x">Esse texto terá metade do tamanho do elemento raiz&lt;p&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>
+          Agora no CSS observe o exemplo que faz o uso de tamanhos de fontes com o REM
+        </p>
+
+        <pre>
+          <code>
+            html {
+              font-size: 10px;
+            }
+            #txt2x {
+              font-size: 2rem;
+            }
+            #txt3x {
+              font-size: 3rem;
+            }
+          </code>
+        </pre>
+
+        <div class="button1">
+          <a href="./index.html">Voltar ao Início</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <div id="by">
+      <p>Feito com 🤍 por Marcos Vinícius</p>
+    </div>
+
+    <div id="informations">
+      <p>Contato</p>
+
+      <a href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!"
+        target="_blank">(11) 95319-2823</a>
+      <br>
+      <a href="mailto:viniciussantos1710@gmail.com" target="_blank">viniciussantos1710@gmail.com</a>
+
+      <nav>
+        <a target="_blank" title="Meu Facebook" href="https://www.facebook.com/profile.php?id=100006266010784">
+          <img class="imagem" src="./imagens/icons/facebook.webp" alt="facebook">
+        </a>
+
+        <a target="_blank" title="Meu Twitter"
+          href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!">
+          <img class="imagem" src="./imagens/icons/whatsapp.webp" alt="whatsapp">
+        </a>
+
+        <a target="_blank" title="Meu Instagram" href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-42773220b/">
+          <img class="imagem" src="./imagens/icons/linkedin.webp" alt="linkedin">
+        </a>
+
+        <a target="_blank" title="Meu Linkedin" href="https://www.instagram.com/marcos_vinnic1us/">
+          <img class="imagem" src="./imagens/icons/instagram.webp" alt="instagram">
+        </a>
+      </nav>
+    </div>
+
+    <div id="localization">
+      <p>Endereço</p>
+
+      <a href="https://goo.gl/maps/UcihtdR2ia6jXvPH7" target="_blank">
+        Rua Miguel Barretto, 451
+        <br>
+        em Jundiaí - SP
+      </a>
+    </div>
+
+  </footer>
+</body>
+
+</html>

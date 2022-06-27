@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* header */
+header {
+  padding: 1.5%;
+  width: 100%;
+  background-color: black;
+  box-sizing: border-box;
+}
+  
+header p {
+  width: 90%;
+  margin: auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Sections */
+main {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 110vh;
+}
+
+/* Box */
+.artigo {
+  width: 80%;
+  margin: 0% 5% 15% 10%;
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #DCDCDC;
+  border-radius: 7%;
+}
+
+.artigo h2 {
+   color: #ffffff;
+   font-size: 1.7rem;
+   font-weight: bold;
+   margin-bottom: 5%;
+}
+
+.artigo p {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 6%;
+}
+
+.button {
+  width: 40%;
+  margin-left: 30%;
+  background-color: #000000;
+  padding: 2.5%;
+  border-radius: 9%;
+}
+
+.button a {
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #000000;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div{
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+footer div a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#by p{
+  font-size: 1.5rem;
+  padding-top: 25%;
+}
+
+#informations p{
+  font-size: 1.8rem;
+  padding-bottom: 13%;
+}
+
+#localization p {
+  font-size: 1.8rem;
+  padding-bottom: 13%;
+}
+
+/* Icons */
+nav {
+  width: 54%;
+  margin-top: 20%;
+  margin: auto;
+  margin-top: 15%;
+  justify-content: space-around;
+}
+
+.imagem {
+  padding: 2%;
+  width: 2.9rem;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 7px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: #C8C8C8;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #707070 ;   
+  border-radius: 0.5px;      
+}
+
+/* Articles */
+.main1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.articlesbox1 {
+  margin-top: 6%;
+  margin-bottom: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Articles Box */
+.artigo1 {
+  width: 80%;
+  margin: 0% 5% 15% 10%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #DCDCDC;
+  border-radius: 5%;
+}
+
+.artigo1 h2 {
+  color: #ffffff;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.artigo1 p {
+  text-align: left;
+  color: #000000;
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+
+/* Articles Button */
+.button1 {
+  width: 40%;
+  margin-left: 30%;
+  background-color: #000000;
+  padding: 1.3%;
+  border-radius: 5%;
+}
+
+.button1 a {
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+code{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.3rem;
+}

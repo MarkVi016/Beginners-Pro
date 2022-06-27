@@ -1,0 +1,78 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* header */
+header#GitHubHeader {
+  font-size: 14px;
+  padding: 22px;
+  background: #161B22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header#GitHubHeader label {
+  color: #BABBBD;
+  background: #161B22;
+  margin-right: 12px;
+}
+
+i#gitIcon {
+  color: white;
+  background: #161B22;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+header#GitHubHeader input {
+  color: #BABBBD;
+  background: #0D1117;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+  width: 80%;
+}
+
+/* Body */
+#padding {
+  background: #0D1117;
+}
+
+.padding {
+  background: #0D1117;
+  padding-top: 15.15rem !important;
+  padding-bottom: 15.15rem !important;
+}
+
+/* Modal */
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0D1117;
+}
+
+.repositoryPicture {
+  margin-top: 1%;
+  border-radius: 2%;
+  width: 40%;
+}
+
+.forks\stars {
+  color: #161B22;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.createTime {
+  color: #161B22;
+  margin-bottom: 0%;
+  font-size: 18px;
+  font-weight: 600;
+}

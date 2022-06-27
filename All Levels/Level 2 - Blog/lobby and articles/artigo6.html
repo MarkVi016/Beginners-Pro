@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>viewport width e viewport height</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>ViniBoy Dev Blog</p>
+  </header>
+
+  <main class="main1">
+    <section class="articlesbox1">
+
+      <div class="artigo1">
+        <h2>viewport width e viewport height</h2>
+
+        <p class="articleboxtxt">
+          Essas unidades tem relação com a largura do dispositivo do qual a aplicação está
+          sendo visualizada, por exemplo se for em uma tela de 1000px, e usarmos um
+          elemento com 100vw esse elemento terá uma largura que ocupa a tela toda do
+          dispositivo, ou seja, o elemento terá 1000px, se for em uma tela de 500px, o
+          elemento de 100vw terá 500px, porém se tiver 50vw o elemento terá 250px, você
+          pode pensar que é bem parecido com a porcentagem que vimos anteriormente, e
+          realmente é, mas a diferença é que a porcentagem tem relação com o elemento pai
+          e o vw e o vh são relativos à tela do dispositivo.
+        </p>
+
+        <pre>
+          <code>
+            #div3 {
+              width: 50vw;
+              height: 50vh;
+              margin: 8px;
+              background-color: cornflowerblue;
+            }              
+          </code>
+        </pre>
+
+        <div class="button1">
+          <a href="./index.html">Voltar ao Início</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <div id="by">
+      <p>Feito com 🤍 por Marcos Vinícius</p>
+    </div>
+
+    <div id="informations">
+      <p>Contato</p>
+
+      <a href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!"
+        target="_blank">(11) 95319-2823</a>
+      <br>
+      <a href="mailto:viniciussantos1710@gmail.com" target="_blank">viniciussantos1710@gmail.com</a>
+
+      <nav>
+        <a target="_blank" title="Meu Facebook" href="https://www.facebook.com/profile.php?id=100006266010784">
+          <img class="imagem" src="./imagens/icons/facebook.webp" alt="facebook">
+        </a>
+
+        <a target="_blank" title="Meu Twitter"
+          href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!">
+          <img class="imagem" src="./imagens/icons/whatsapp.webp" alt="whatsapp">
+        </a>
+
+        <a target="_blank" title="Meu Instagram" href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-42773220b/">
+          <img class="imagem" src="./imagens/icons/linkedin.webp" alt="linkedin">
+        </a>
+
+        <a target="_blank" title="Meu Linkedin" href="https://www.instagram.com/marcos_vinnic1us/">
+          <img class="imagem" src="./imagens/icons/instagram.webp" alt="instagram">
+        </a>
+      </nav>
+    </div>
+
+    <div id="localization">
+      <p>Endereço</p>
+
+      <a href="https://goo.gl/maps/UcihtdR2ia6jXvPH7" target="_blank">
+        Rua Miguel Barretto, 451
+        <br>
+        em Jundiaí - SP
+      </a>
+    </div>
+
+  </footer>
+</body>
+
+</html>

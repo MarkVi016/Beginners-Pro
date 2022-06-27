@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto - Level 3</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <form name="dados">
+    <h1>Agende sua consulta</h1>
+    <div>
+      <label for="nome">Insira seu nome completo</label>
+      <br>
+      <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+    </div>
+    <div>
+      <label for="telefone">Insira o número do seu telefone</label>
+      <br>
+      <input type="text" name="telefone" id="telefone" placeholder="Telefone" required maxlength="14">
+    </div>
+    <div>
+      <label for="especialidade">Selecione uma especialidade</label>
+      <br>
+      <select name="especialidade" id="especialidade">
+        <option value="geral">Clínico geral</option>
+        <option value="dermatologista">Dermatologista</option>
+        <option value="pediatra">Pediatra</option>
+        <option value="cardiologista">Cardiologista</option>
+      </select>
+    </div>
+    <div>
+      <label for="data">Data da consulta</label>
+      <br>
+      <input type="date" name="data" id="data" required>
+    </div>
+    <div>
+      <button type="submit">Agendar</button>
+    </div>
+  </form>
+
+  <div id="consulta">
+    <table>
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Contato</th>
+          <th>Necessidade</th>
+          <th>Data da consulta</th>
+        </tr>
+      </thead>
+      <tbody id="tabela"></tbody>
+    </table>
+    <button id="fechaModal"> Fechar</button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

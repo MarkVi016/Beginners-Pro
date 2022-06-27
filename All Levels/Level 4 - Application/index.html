@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a id="menu">Menu</a>
+      <a id="historic">Histórico</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- form -->
+    <div class="container" id="form-content">
+      <div class="title">Dados</div>
+      <form name="Form-content">
+        <div class="user-details">
+
+          <div class="input-box">
+            <label class="details" for="média">Km/L</label>
+            <input type="number" name="média" placeholder="Insira a média (km/l) que o carro faz" required>
+          </div>
+
+          <div class="input-box">
+            <label class="details" for="preço">Preço da Gasolina</label>
+            <input type="number" name="preço" placeholder="Insira o preço atual da gasolina" required>
+          </div>
+
+          <div class="input-box">
+            <label class="details" for="km">Km por dia</label>
+            <input type="number" name="km" placeholder="Insira quantos Km por dia anda" required>
+          </div>
+
+          <div class="input-box">
+            <label class="details" for="dias">Dias por semana</label>
+            <input type="number" name="dias" placeholder="Dias em que anda essa distância " required>
+          </div>
+
+          <div class="button">
+            <button id="check">Confirmar</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="background" id="background"></div>
+
+    <!-- modal -->
+    <div class="alert-box">
+      <div class="icon">
+        <i class="fa-solid fa-gas-pump"></i>
+      </div>
+      <header>Valores Gastos</header>
+      <div id="results"></div>
+      <div class="btns">
+        <button id="saveCalculation">Salvar Cálculo</button>
+        <button id="deleteCalculation">Excluir</button>
+      </div>
+    </div>
+
+    <!-- List -->
+    <div class="container" id="task-content">
+      <div class="tasks-container">
+        <div class="title">Lista</div>
+        <div id="task-container">
+          <div class="task-item">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Gastos Diarios </th>
+          <th>Gastos Semanais</th>
+          <th>Gastos Mensais</th>
+          <th>Gastos Anuais</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </main>
+
+  <footer>
+
+    <div id="by">
+      <p>Feito com 🤍 por Marcos Vinícius</p>
+    </div>
+
+    <div id="informations">
+      <p>Contato</p>
+
+      <a href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!"
+        target="_blank"> (11) 95319-2823</a>
+      <br>
+      <a href="mailto:viniciussantos1710@gmail.com" target="_blank">viniciussantos1710@gmail.com</a>
+
+      <nav>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100006266010784">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a target="_blank" href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-42773220b/">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/marcos_vinnic1us/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a target="_blank"
+          href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div id="localization">
+      <p>Endereço</p>
+
+      <a href="https://goo.gl/maps/UcihtdR2ia6jXvPH7" target="_blank">
+        Rua Miguel Barretto, 451
+        <br>
+        em Jundiaí - SP
+      </a>
+    </div>
+
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/3570804320.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

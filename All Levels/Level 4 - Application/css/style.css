@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* Menu */
+header {
+  padding: 1.5%;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-bottom: #000000;
+}
+
+header nav {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  position: relative;
+  font-size: 1.8rem;
+  padding: 6px, 0;
+  text-decoration: none;
+  color: #707070;
+  cursor: pointer;
+  z-index: 6;
+}
+
+header nav a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  transition: all 0.4s ease;
+}
+
+header nav a:hover::before {
+  width: 100%;
+}
+
+header nav a:hover {
+  color: black;
+  font-weight: bold;
+  z-index: 6;
+  transition: all 0.4s ease;
+}
+
+/* Body */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+/* Form */
+#form-content {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 1px solid #ECE9E6;
+  z-index: 6;
+}
+
+.container .title {
+  font-size: 2.5rem;
+  font-weight: 550;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+/* manipulation of input */
+.user-details .input-box .details {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 1.4rem;
+  border-bottom-width: 2px;
+  transition: all 0.3s;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #000000;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+  width: 100%;
+}
+
+form .button button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  cursor: pointer;
+}
+
+/* Modal */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 162%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#background {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.alert-box {
+  position: absolute;
+  margin: auto;
+  margin-bottom: 5%;
+  max-width: 450px;
+  width: 100%;
+  background: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+.alert-box {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.alert-box .icon {
+  height: 100px;
+  width: 100px;
+  color: #f23b26;
+  border: 3px solid #f23b26;
+  border-radius: 50%;
+  line-height: 97px;
+  font-size: 50px;
+}
+
+.alert-box .icon i {
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+.alert-box header {
+  font-size: 2.9rem;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.alert-box p {
+  font-size: 1.7rem;
+}
+
+.alert-box .btns {
+  margin-top: 20px;
+}
+
+.alert-box button {
+  display: inline-flex;
+  height: 55px;
+  padding: 0 30px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 55px;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btns button:first-child {
+  background: #2980b9;
+}
+
+.btns button:first-child:hover {
+  background: #2573a7;
+}
+
+.btns button:last-child {
+  background: #f23b26;
+}
+
+.btns button:last-child:hover {
+  background: #d9210d;
+}
+
+/* List of Calculations */
+
+/* Task */
+#task-content {
+  display: none;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  padding: 30px 40px;
+  width: 40%;
+  min-width: 790px;
+  z-index: 6;
+}
+
+.tasks-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+
+.task-item p {
+  font-size: 1.4rem;
+  font-weight: 550;
+  height: 42px;
+  width: 70%;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  text-align: center;
+  border-bottom-width: 2px;
+}
+
+.task-item .criadoEm {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 550;
+  height: 42px;
+  width: 15%;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding-left: 5px;
+  border-bottom-width: 2px;
+}
+
+.task-item i {
+  background: #000000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.task-item i.fa-solid {
+  background: #1d6f42;
+}
+
+.task-item i:hover {
+  cursor: pointer;
+}
+
+/* table */
+table {
+  display: none;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #000000;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+  z-index: 6;
+}
+
+footer div a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#by p {
+  font-size: 1.5rem;
+  padding-top: 25%;
+}
+
+#informations p {
+  font-size: 1.8rem;
+  padding-bottom: 13%;
+}
+
+#localization p {
+  font-size: 1.8rem;
+  padding-bottom: 13%;
+}
+
+/* Icons */
+nav {
+  width: 78%;
+  margin-top: 20%;
+  margin: auto;
+  margin-top: 15%;
+  justify-content: space-around;
+}
+
+a i {
+  padding: 11%;
+  width: 1.0rem;
+  font-size: 1.5rem;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #C8C8C8;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  border-radius: 0.5px;
+}
+
+/* Settings */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

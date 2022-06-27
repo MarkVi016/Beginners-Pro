@@ -1,0 +1,39 @@
+/* extra settings */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* icons */
+#task-icon button i {
+  background-color: #41b883;
+
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+#task-icon button i:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+/* Scrollbar */
+section::-webkit-scrollbar {
+  width: 7px;
+}
+
+section::-webkit-scrollbar-track {
+  background: #C8C8C8;
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  border-radius: 0.5px;
+}
