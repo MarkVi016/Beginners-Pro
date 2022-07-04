@@ -1,0 +1,17 @@
+#products-container {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrollbar */
+#product-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+#product-container::-webkit-scrollbar-track {
+  background: #C8C8C8;
+}
+
+#product-container::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  border-radius: 1px;
+}

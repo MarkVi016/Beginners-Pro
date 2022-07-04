@@ -1,0 +1,93 @@
+.required-input {
+  color: tomato;
+  font-size: 1.2rem;
+}
+
+#form-content {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 1px solid #ECE9E6;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .title {
+  font-size: 2.5rem;
+  font-weight: 550;
+  position: relative;
+}
+
+.container div i {
+  color: black;
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+.container div i:hover {
+  cursor: pointer;
+}
+
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+/* manipulation of input */
+.user-details .input-box .details {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 1.4rem;
+  border-bottom-width: 2px;
+  transition: all 0.3s;
+}
+
+.user-details .input-box input:focus {
+  border-color: #000000;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+  width: 100%;
+}
+
+form .button button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  cursor: pointer;
+}

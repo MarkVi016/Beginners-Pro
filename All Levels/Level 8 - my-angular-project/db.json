@@ -1,0 +1,18 @@
+{
+  "Products": [
+    {
+      "name": "Elden Ring",
+      "category": "Games",
+      "price": 220,
+      "description": "RPG, SoulsLike",
+      "id": 1
+    },
+    {
+      "name": "Xbox Series S",
+      "category": "Eletrônico",
+      "price": 5000,
+      "description": "Video-Game",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<main>
+  <div class="container" id="form-content">
+    <div class="form-header">
+      <div class="title">Cadastrar Produto</div>
+      <i class="pi pi-times" (click)="cancel()"></i>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="save()">
+      <div class="user-details">
+
+        <div class="input-box">
+          <label class="details" for="name">Nome</label>
+          <input type="text" id="name" placeholder="Insira o nome do Produto" formControlName="name" />
+          <span *ngIf="!form.controls['name'].valid && form.controls['name'].touched" class="required-input">
+            Informe o nome do produto!
+          </span>
+        </div>
+
+        <div class="input-box">
+          <label class="details" for="category">Categoria</label>
+          <input type="text" id="category" placeholder="Insira a categoria do Produto" formControlName="category" />
+          <span *ngIf="!form.controls['category'].valid && form.controls['category'].touched" class="required-input">
+            Informe a categoria do produto!
+          </span>
+        </div>
+
+        <div class="input-box">
+          <label class="details" for="price">Preço</label>
+          <input type="number" id="price" placeholder="Insira o preço do Produto" formControlName="price" />
+          <span *ngIf="!form.controls['price'].valid && form.controls['price'].touched" class="required-input">
+            Informe o preço do produto!
+          </span>
+        </div>
+
+        <div class="input-box">
+          <label class="details" for="description">Descrição</label>
+          <input type="text" id="description" placeholder="insira a descrição do Produto"
+            formControlName="description" />
+          <span *ngIf="!form.controls['description'].valid && form.controls['description'].touched"
+            class="required-input">
+            Informe a descrição do produto!
+          </span>
+        </div>
+
+        <div class="button">
+          <button type="submit">Confirmar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer class="text-white w-full bg-black p-[5%] box-border flex justify-around font-bold no-underline">
+
+  <div>
+    <p class="sm:text-[15px] text-[7px] pt-[25%]">Feito com 🤍 por Marcos Vinícius</p>
+  </div>
+
+  <div>
+    <p class="sm:text-[18px] text-[10px] pb-[13%]">Contato</p>
+
+    <a class="sm:text-[15px] text-[7px]"
+      href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!" target="_blank">
+      (11) 95319-2823</a>
+    <br>
+    <a class="sm:text-[15px] text-[7px]" href="mailto:viniciussantos1710@gmail.com"
+      target="_blank">viniciussantos1710@gmail.com</a>
+
+    <nav class="w-3/4 m-auto pt-[15%] justify-around">
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100006266010784">
+        <i class="pi pi-facebook p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+
+      <a target="_blank" href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-42773220b/">
+        <i class="pi pi-linkedin p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+
+      <a target="_blank" href="https://www.instagram.com/marcos_vinnic1us/">
+        <i class="pi pi-instagram p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+
+      <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!">
+        <i class="pi pi-whatsapp p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+    </nav>
+  </div>
+
+  <div>
+    <p class="sm:text-[18px] text-[10px] pb-[13%]">Endereço</p>
+
+    <a class="sm:text-[15px] text-[7px]" href="https://goo.gl/maps/UcihtdR2ia6jXvPH7" target="_blank">
+      Rua Miguel Barretto, 451
+      <br>
+      em Jundiaí - SP
+    </a>
+  </div>
+
+</footer>

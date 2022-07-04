@@ -1,0 +1,81 @@
+<main>
+  <div
+    class="sm:w-5/6 sm:py-[30px] sm:px-[40px] py-[15px] px-[20px] w-full rounded-[5px] border-[3px] border-solid border-[#ffffff]">
+    <div class="w-full rounded-[10px] bg-white py-[30px] px-[20px]" id="products-container">
+
+      <div class="flex justify-between border-b-[1px] border-solid border-[#B7B7B7] pb-[1.2%]">
+        <p class="sm:text-[14px] text-[9px] text-[#5A5A5A] sm:w-[5%] w-[11%] font-medium pl-[1%]">Nome</p>
+        <p class="sm:text-[14px] text-[9px] text-[#5A5A5A] sm:w-[5%] w-[11%] font-medium">Categoria</p>
+        <p class="sm:text-[14px] text-[9px] text-[#5A5A5A] sm:w-[5%] w-[11%] font-medium">Preço</p>
+        <p class="sm:text-[14px] text-[9px] text-[#5A5A5A] sm:w-[5%] w-[11%] font-medium">Descrição</p>
+        <p class="sm:text-[14px] text-[9px] text-[#5A5A5A] sm:w-[5%] w-[11%] font-medium">Ações</p>
+      </div>
+
+      <div class="overflow-y-auto max-h-96">
+        <div class="flex justify-between items-center text-start border-b-[1px] border-solid border-[#B7B7B7] p-[0.9%]"
+          *ngFor="let Product of products ">
+          <p class="sm:text-[14px] text-[9px] sm:w-[15%] w-[21%] font-medium">{{ Product.name }}</p>
+          <p class="sm:text-[14px] text-[9px] sm:w-[15%] w-[21%] font-medium">{{ Product.category }}</p>
+          <p class="sm:text-[14px] text-[9px] sm:w-[15%] w-[21%] font-medium">{{ Product.price | currency: 'BRL' }}</p>
+          <p class="sm:text-[14px] text-[9px] sm:w-[15%] w-[21%] font-medium">{{ Product.description}}</p>
+
+          <div>
+            <i class="pi pi-pencil sm:!text-[14px] !text-[9px] text-[#00008B] sm:p-[5px] p-[2px] hover:cursor-pointer"
+              (click)="update(Product.id)"></i>
+            <i class="pi pi-trash sm:!text-[14px] !text-[9px] text-[#8B0000] sm:p-[5px] p-[2px] hover:cursor-pointer"
+              (click)="delet(Product.id)"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="text-white w-full bg-black p-[5%] box-border flex justify-around font-bold no-underline">
+
+  <div>
+    <p class="sm:text-[15px] text-[7px] pt-[25%]">Feito com 🤍 por Marcos Vinícius</p>
+  </div>
+
+  <div>
+    <p class="sm:text-[18px] text-[10px] pb-[13%]">Contato</p>
+
+    <a class="sm:text-[15px] text-[7px]"
+      href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!" target="_blank">
+      (11) 95319-2823</a>
+    <br>
+    <a class="sm:text-[15px] text-[7px]" href="mailto:viniciussantos1710@gmail.com"
+      target="_blank">viniciussantos1710@gmail.com</a>
+
+    <nav class="w-3/4 m-auto pt-[15%] justify-around">
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100006266010784">
+        <i class="pi pi-facebook p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+
+      <a target="_blank" href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-42773220b/">
+        <i class="pi pi-linkedin p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+
+      <a target="_blank" href="https://www.instagram.com/marcos_vinnic1us/">
+        <i class="pi pi-instagram p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+
+      <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=5511953192823&text=Ol%C3%A1%20Marcos%20Vin%C3%ADcius!">
+        <i class="pi pi-whatsapp p-[11%] w-[1.0rem] sm:!text-[14px] !text-[7px]"></i>
+      </a>
+    </nav>
+  </div>
+
+  <div>
+    <p class="sm:text-[18px] text-[10px] pb-[13%]">Endereço</p>
+
+    <a class="sm:text-[15px] text-[7px]" href="https://goo.gl/maps/UcihtdR2ia6jXvPH7" target="_blank">
+      Rua Miguel Barretto, 451
+      <br>
+      em Jundiaí - SP
+    </a>
+  </div>
+
+</footer>
